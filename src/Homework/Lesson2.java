@@ -32,6 +32,7 @@ public class Lesson2 {
 
         char c1 = 'M';
         char c2 = '\u0047';
+        char c3 = 662;
 
         System.out.println(b10);
         System.out.println(b8);
@@ -63,6 +64,7 @@ public class Lesson2 {
 
         System.out.println(c1);
         System.out.println(c2);
+        System.out.println(c3);
     }
 
 }
