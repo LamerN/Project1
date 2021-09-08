@@ -22,8 +22,8 @@ public class Lesson2 {
         long l2 = 0b111010110111100110100010101L;
         long l16 = 0x75BCD15L;
 
-        float f1 = 2.36f;
-        float f2 = 2.5454f;
+        float f1 = 2.36F;
+        float f2 = 2.5454F;
         double d1 = 2.36;
         double d2 = 2.5454;
 
