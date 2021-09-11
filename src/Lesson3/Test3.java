@@ -7,7 +7,7 @@ public class Test3 {
         boolean x=true;
         boolean y=true;
         boolean z=false;
-
-        System.out.println(b);
+        boolean result = x&&y&&z;
+        System.out.println(result);
     }
 }
