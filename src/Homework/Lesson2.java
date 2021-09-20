@@ -34,7 +34,7 @@ public class Lesson2 {
         char c2 = '\u0047';
         char c3 = 662;
 
-        System.out.println(b10);
+  /*      System.out.println(b10);
         System.out.println(b8);
         System.out.println(b2);
         System.out.println(b16);
@@ -65,6 +65,22 @@ public class Lesson2 {
         System.out.println(c1);
         System.out.println(c2);
         System.out.println(c3);
+
+        int change = 4;
+        change = 8;
+        System.out.println(change); */
+
+        boolean b = false;
+        b = true;
+
+        boolean toBe = false;
+        b = toBe || !toBe;
+        if (b) {
+            System.out.println(toBe);
+        }
+
+
+
     }
 
 }
