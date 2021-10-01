@@ -50,5 +50,3 @@ class StudentTest {
 }
 
 
-public class Lesson4 {
-}
