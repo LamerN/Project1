@@ -15,7 +15,7 @@ class BankAccount{
     }
 }
 
-class Lesson4Bank {
+class Lesson5BankAccountTest {
     public static void main(String[] args) {
         BankAccount Igor = new BankAccount();
         Igor.name = "Igor";

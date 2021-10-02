@@ -11,8 +11,13 @@ class Student {
 }
 
 class StudentTest {
+   static void showAvarageMark(Student a){
+        double mark = (a.markLanguage+a.markMathmatic+a.markEconomy)/3.0;
+        System.out.println(a.name+" "+a.lastName+" - average mark: "+mark);
+    }
 
     public static void main(String[] args) {
+
         Student Andy = new Student();
         Andy.ticket_number = 1;
         Andy.name = "Andy";
@@ -22,7 +27,9 @@ class StudentTest {
         Andy.markEconomy = 5;
         Andy.markLanguage = 2;
 
-        double averageMarkAndy = (Andy.markMathmatic+ Andy.markEconomy + Andy.markLanguage)/3;
+        showAvarageMark(Andy);
+
+        double averageMarkAndy = (Andy.markMathmatic+ Andy.markEconomy + Andy.markLanguage)/3.0;
         System.out.println(Andy.name+" "+Andy.lastName+" - average mark: "+averageMarkAndy);
 
         Student Garry = new Student();
