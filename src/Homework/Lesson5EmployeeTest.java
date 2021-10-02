@@ -8,8 +8,8 @@ class Employee {
         salary = salaryIn;
         department = departmentIn;
     }
-    int salaryX2(){
-        return salary*=2;
+    void salaryX2(){
+        salary*=2;
     }
     int id;
     String surname;
