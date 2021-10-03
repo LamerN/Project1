@@ -11,7 +11,7 @@ class Student {
 }
 
 class StudentTest {
-   static void showAvarageMark(Student a){
+    void showAvarageMark(Student a){
         double mark = (a.markLanguage+a.markMathmatic+a.markEconomy)/3.0;
         System.out.println(a.name+" "+a.lastName+" - average mark: "+mark);
     }
@@ -27,7 +27,7 @@ class StudentTest {
         Andy.markEconomy = 5;
         Andy.markLanguage = 2;
 
-        showAvarageMark(Andy);
+
 
         double averageMarkAndy = (Andy.markMathmatic+ Andy.markEconomy + Andy.markLanguage)/3.0;
         System.out.println(Andy.name+" "+Andy.lastName+" - average mark: "+averageMarkAndy);
@@ -40,7 +40,7 @@ class StudentTest {
         Garry.markMathmatic = 3;
         Garry.markEconomy = 2;
         Garry.markLanguage = 2;
-        double averageMarkGarry = (Garry.markMathmatic+ Garry.markEconomy + Garry.markLanguage)/3;
+        double averageMarkGarry = (Garry.markMathmatic+ Garry.markEconomy + Garry.markLanguage)/3.0;
         System.out.println(Garry.name+" "+Garry.lastName+" - average mark: "+averageMarkGarry);
 
         Student Peter = new Student();
@@ -51,8 +51,13 @@ class StudentTest {
         Peter.markMathmatic = 5;
         Peter.markEconomy = 4;
         Peter.markLanguage = 5;
-        double averageMarkPeter = (Peter.markMathmatic+ Peter.markEconomy + Peter.markLanguage)/3;
+        double averageMarkPeter = (Peter.markMathmatic+ Peter.markEconomy + Peter.markLanguage)/3.0;
         System.out.println(Peter.name+" "+Peter.lastName+" - average mark: "+averageMarkPeter);
+
+        StudentTest st = new StudentTest();
+        st.showAvarageMark(Andy);
+        st.showAvarageMark(Garry);
+        st.showAvarageMark(Peter);
     }
 }
 
