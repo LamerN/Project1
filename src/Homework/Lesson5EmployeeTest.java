@@ -1,34 +1,12 @@
 package Homework;
 
-class Employee {
-    Employee(int idIn, String surnameIn, int ageIn, int salaryIn, int departmentIn){
-        id = idIn;
-        surname = surnameIn;
-        age = ageIn;
-        salary = salaryIn;
-        department = departmentIn;
-    }
-    void salaryX2(){
-        salary*=2;
-    }
-    int id;
-    String surname;
-    int age;
-    int salary;
-    int department;
-}
-
 public class Lesson5EmployeeTest {
     public static void main(String[] args) {
-        Employee Andy = new Employee(1,"Star", 18, 1800, 5);
-        System.out.println("зарплата "+ Andy.surname+" = "+Andy.salary);
-        Andy.salaryX2();
-        System.out.println("зарплата "+ Andy.surname+" = "+Andy.salary);
+        Lesson5Employee Andy = new Lesson5Employee(1,"Star", 18, 1800, 5);
 
-        Employee Grisha = new Employee(2, "Bochka", 25, 2200, 11);
-        System.out.println("зарплата "+ Grisha.surname+" = "+Grisha.salary);
-        Grisha.salaryX2();
-        System.out.println("зарплата "+ Grisha.surname+" = "+Grisha.salary);
+
+        Lesson5Employee Grisha = new Lesson5Employee(2, "Bochka", 25, 2200, 11);
+
     }
 
 }
