@@ -19,5 +19,6 @@ class Lesson8_2Test{
     public static void main(String[] args) {
         Lesson8_2 Test = new Lesson8_2();
         Test.showInfo(5);
+
     }
 }
