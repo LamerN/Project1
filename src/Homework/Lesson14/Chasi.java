@@ -7,7 +7,7 @@ public class Chasi {
                 if ((hour>1)&&(minute%10==0)){
                     break outer;
                 }
-                for (int second = 0; second<=60; second++){
+                for (int second = 0; second<60; second++){
                     if (second*hour>minute){
                         continue outer2;
                     }
