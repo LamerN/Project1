@@ -1,7 +1,7 @@
 package Homework.Lesson18;
 
 public class Test2 {
-    public static void showArray(int array[][]) {
+    public static void showArray(String array[][]) {
         System.out.print("{");
         for(int i=0;i<array.length;i++){
             for (int j=0;j< array[i].length;j++){
@@ -23,7 +23,7 @@ public class Test2 {
     }
 
     public static void main(String[] args) {
-        int array1[][] = {{4,1,4,3},{5,6,4},{7,3,2,4,3,5}};
+        String array1[][] = {{"white", "blue", "yellow"},{"black","brown"},{"red","green","light_blue"}};
         showArray(array1);
     }
 }
