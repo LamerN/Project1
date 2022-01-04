@@ -1,4 +1,4 @@
-package Homework;
+package Homework.Lesson4;
 
 class Student {
     int id;

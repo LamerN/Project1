@@ -1,4 +1,4 @@
-package Homework;
+package Homework.Lesson5;
 
 public class Lesson5Employee {
     public Lesson5Employee(int idIn, String surnameIn, int ageIn, int salaryIn, int departmentIn) {
@@ -9,7 +9,7 @@ public class Lesson5Employee {
         department = departmentIn;
     }
 
-    Lesson5Employee(int idIn, String surnameIn, int ageIn, int salaryIn) {
+    public Lesson5Employee(int idIn, String surnameIn, int ageIn, int salaryIn) {
         this(idIn, surnameIn, ageIn, salaryIn, 0);
     }
 
@@ -21,11 +21,11 @@ public class Lesson5Employee {
         salary *= 2;
     }
 
-    int id;
+    public int id;
     public String surname;
-    int age;
+    public int age;
     private int salary;
-    int department;
+    public int department;
 
     public void showId() {
         System.out.println("id = " + id);

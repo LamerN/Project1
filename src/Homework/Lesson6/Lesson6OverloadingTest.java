@@ -1,4 +1,4 @@
-package Homework;
+package Homework.Lesson6;
 
 class Overloading{
 

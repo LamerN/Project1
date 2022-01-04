@@ -1,4 +1,4 @@
-package Homework;
+package Homework.Lesson5;
 
 class BankAccount{
 

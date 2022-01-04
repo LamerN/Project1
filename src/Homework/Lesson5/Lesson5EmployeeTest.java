@@ -1,4 +1,4 @@
-package Homework;
+package Homework.Lesson5;
 
 class Employee {
     Employee(int idIn, String surnameIn, int ageIn, int salaryIn, int departmentIn){
