@@ -32,12 +32,9 @@ public class Student {
         else System.out.println("wrong grade value");
     }
     public void showInfo(){
-        StringBuilder nameCopy = new StringBuilder(name);
-        System.out.println("name = "+nameCopy);
-        int courseCopy = course;
-        System.out.println("course = "+courseCopy);
-        int gradeCopy = grade;
-        System.out.println("grade = "+gradeCopy);
+        System.out.println("name = "+getName());
+        System.out.println("course = "+getCourse());
+        System.out.println("grade = "+getGrade());
     }
 
 
@@ -47,8 +44,13 @@ class StudentTest{
     public static void main(String[] args) {
         Student First = new Student();
         First.setName(new StringBuilder("Andy"));
-        First.setCourse(4);
+        First.setCourse(5);
         First.setGrade(7);
+        Student Nik = new Student();
+        Nik.setName(new StringBuilder("Nik"));
+        Nik.setGrade(4);
+        Nik.setCourse(2);
         First.showInfo();
+        Nik.showInfo();
     }
 }
