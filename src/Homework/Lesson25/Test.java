@@ -14,7 +14,7 @@ public class Test {
         Speakable s1 = new Pingvin("s1");
         Speakable s2 = new Lev("s2");
 
-        Speakable[] speak = new Speakable[]{s1, s2};
+        Speakable[] speak = new Speakable[]{s1, s2, b1, m1, p1, l1};
         Animal[] anim = new Animal[]{a1, a2, a3, f1, b1, m1, me1, p1, l1};
         for(Speakable s:speak){
             if(s instanceof Mechenosec){
