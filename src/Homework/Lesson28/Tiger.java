@@ -1,23 +1,19 @@
 package Homework.Lesson28;
 
 
-class NeMyacoException extends RuntimeException{
-    NeMyacoException(String s1){
-        super(s1);
-    }
-}
-class NeVodaException extends Exception{
-    NeVodaException(String s2){
-        super(s2);
-    }
-}
-
 public class Tiger {
-    void eat(String s3){
+    public void eat(String s3){
         if(!s3.equals("myaso")){
             throw new NeMyacoException("tigr ne est "+s3);
         } else {
             System.out.println("tigr est myaso");
+        }
+    }
+    public void drink(String s2) throws NeVodaException{
+        if(!s2.equals("voda")){
+            throw new NeVodaException("tigr ne pyet "+s2);
+        } else {
+            System.out.println("tigr pyet vodu");
         }
     }
 }
