@@ -5,14 +5,15 @@ import java.time.format.DateTimeFormatter;
 public class Lesson29 {
     DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("Y, MMMM-dd !! HH:mm");
     DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("HH:mm, dd/MMM/YY");
-    void smena(LocalDateTime ldt1, LocalDateTime ldt2, Period p1, Duration d1){
-        while (ldt1.isBefore(ldt2)){
-            System.out.print("Работаем с: "+ldt1.format(dtf1));
-            ldt1 = ldt1.plus(p1);
-            System.out.println(" До: "+ldt1.format(dtf1));
-            System.out.print("Отдыхаем с: "+ldt1.format(dtf2));
-            ldt1 = ldt1.plus(d1);
-            System.out.println(" До: "+ldt1.format(dtf2));
+
+    void smena(LocalDateTime start, LocalDateTime end, Period p1, Duration d1){
+        while (start.isBefore(end)){
+            System.out.print("Работаем с: "+start.format(dtf1));
+            start = start.plus(p1);
+            System.out.println(" До: "+start.format(dtf1));
+            System.out.print("Отдыхаем с: "+start.format(dtf2));
+            start = start.plus(d1);
+            System.out.println(" До: "+start.format(dtf2));
         }
     }
 
